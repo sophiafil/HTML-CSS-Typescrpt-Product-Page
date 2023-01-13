@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../style.css">
+        <script src="../dist/app.js" defer></script>
+        <title>Really Cool Plant</title>
+    </head>
+    <body>
+        <h1>Green and Red Totally Real Succulent Plants</h1>
+        <img src="../plant.jpg" alt="Picture of succulents in a vase." width="300px" height="300px"/><br>
+        <div id="desc">
+            <p>
+                Succulent plants, also known as succulents, are plants with parts that are thickened, fleshy, and engorged, usually to 
+                retain water in arid climates or soil conditions. However, this is a fake plant, so none of this is true for this particular 
+                item. This is mostly used for decorations, so put it on a table and tell your guest that it's real.
+            </p>
+            <div id="totalAverage"></div>
+        </div>
+        <hr>
+        <div id = "review">
+            <h3>Write a Review</h3>
+            <form action="javascript:addReview()">
+                <label>Name: </label><br>
+                <input type="text" id="name" name="name" required/><br><br>
+                <label>Rating: </label><br>
+                <input type="number" id="rating" min="1" max="5" name="rating" step="1" value ="5" required/><br><br>  
+                <label>Comment: </label><br>
+                <textarea id="reviewComment" name="reviewComment" rows="10" cols="50" placeholder="Type up an optional review"></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <hr>
+        <h3>Reviews: </h3>
+        <div id="addNewReview">
+
+        </div>
+        
+    </body>
+</html>
